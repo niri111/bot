@@ -21,41 +21,37 @@ const Navbar: React.FC<NavbarProps> = ({ onSectionChange }) => {
   return (
     <div className="w-full h-[65px] fixed bottom-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 rounded-t-[20px]">
       <div className="w-full h-full flex flex-row items-center justify-evenly">
-        <a 
-          href="#home" 
+        <div 
           className={`flex flex-col items-center text-gray-200 cursor-pointer ${activeIcon === "home" ? "animate-pulse text-white" : ""}`} 
           onClick={() => handleClick("home")}
         >
           <IonIcon icon={activeIcon === "home" ? home : homeOutline} className="text-3xl" />
           <span className="text-xs mt-1">Home</span>
-        </a>
-        <a 
-          href="#task" 
+        </div>
+        <div 
           className={`flex flex-col items-center text-gray-200 cursor-pointer ${activeIcon === "task" ? "animate-pulse text-white" : ""}`} 
           onClick={() => handleClick("task")}
         >
           <IonIcon icon={activeIcon === "task" ? grid : gridOutline} className="text-3xl" />
           <span className="text-xs mt-1">Task</span>
-        </a>
-        <a 
-          href="#friends" 
+        </div>
+        <div 
           className={`flex flex-col items-center text-gray-200 cursor-pointer ${activeIcon === "friends" ? "animate-pulse text-white" : ""}`} 
           onClick={() => handleClick("friends")}
         >
           <IonIcon icon={activeIcon === "friends" ? people : peopleOutline} className="text-3xl" />
           <span className="text-xs mt-1">Friends</span>
-        </a>
-        <a 
-          href="#wallet" 
+        </div>
+        <div 
           className={`flex flex-col items-center text-gray-200 cursor-pointer ${activeIcon === "wallet" ? "animate-pulse text-white" : ""}`} 
           onClick={() => handleClick("wallet")}
         >
           <IonIcon icon={activeIcon === "wallet" ? wallet : walletOutline} className="text-3xl" />
           <span className="text-xs mt-1">Wallet</span>
-        </a>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default Navbar

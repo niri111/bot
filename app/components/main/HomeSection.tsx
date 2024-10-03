@@ -15,4 +15,4 @@ const HomeSection: React.FC = () => {
   );
 };
 
-export default HomeSection;
+export default HomeSection
